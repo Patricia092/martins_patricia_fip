@@ -1,3 +1,130 @@
+
+/* (1) HTML or Tag selectors - apply to every instance of a tag */
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+/* (2) ID selectors - apply to one element only, that has the property id="idvalue" */
+#container {
+	margin: 0 auto;
+	width: 1920px;
+}
+
+#header-box1 {
+	grid-column: 1/3;
+}
+
+#header-box2 {
+	grid-column: 4/11;
+}
+
+#hero-content {
+	margin-top: 100px;
+}
+
+#hero-box1 {
+	grid-column: 1/8;
+}
+
+#hero-box2 {
+	grid-column: 8/-1;
+}
+
+#seasonal-beverages {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#seasonal-beverages h2 {
+	grid-column: 1/-1;
+	text-align: center;
+    margin-bottom: 24px;
+}
+
+#drink-one {
+	grid-column: 1/5;
+	
+	height: 507px;
+}
+
+#drink-two {
+	grid-column: 5/9;
+	
+	height: 507px;
+}
+
+#drink-three {
+	grid-column: 9/-1;
+	
+	height: 507px;
+}
+
+#favorite-products {
+	margin-top: 100px;
+}
+
+#favorite-products h2 {
+	grid-column: 1/-1;
+	text-align: center;
+    margin-bottom: 24px;
+}
+
+
+#favorite-box1 {
+	grid-column: 1/8;
+    background-color: white;
+}
+
+#favorite-box2 {
+	grid-column: 8/-1;
+}
+
+/* (3) Class selectors - most flexibile, because you choose to apply them to multiple elements or not */
+
 .hidden {
     display: none;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 122px);
+	grid-column-gap: 16px;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+.header-box {
+	background-color: #EFEFEF;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+.header-nav {
+    text-align: center;
+    background-color: white;
+}
+
+.ul-nav { 
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    list-style-type: none;
+}
+
+.ul-nav a {
+    text-decoration: none;
+}
+
+.beverages-box {
+    background-color: blanchedalmond;
 }
